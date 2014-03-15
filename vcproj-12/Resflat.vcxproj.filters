@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\source\class.hpp">
+    <ClInclude Include="..\source\resistor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
