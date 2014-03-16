@@ -17,11 +17,11 @@
 #include <iostream>
 using namespace std;
 
-int current, voltage, resistance, option;
+void main() {
 
-void select() {
+	int input, resistance, voltage, current;
+	
 	system("cls");
-	do {
 		cout<<"\n\n";
 		cout<<"\t1. Calculate Current in Serie\n";
 		cout<<"\t2. Calculate Voltage in Serie\n";
@@ -31,14 +31,10 @@ void select() {
 		cout<<"\t6. Calculate Resistance in Parallel\n\n";
 		cout<<"\t7. Quit\n\n\n";
 		cout<<"\t Enter your choice =>  ";
-		cin>>option;
-	} 
-	while ((option < 0) && (option > 7));
-		cout<<"\n\n This is a invalid option\n"; 
-}
-
-void calculate() {
-	if (option == 1) {
+		cin>>input;
+		
+	switch (input) {
+	case 1:
 		system("cls");
 		cout<<"\n\n\n";
 		cout<<"\tEnter Voltage => ";
@@ -49,8 +45,8 @@ void calculate() {
 		cout<<"\n\n";
 		cout<<" Current = "<< current <<".";
 		cout<<"\n\n\n\n";
-	}
-	if (option == 2) {
+		break;
+	case 2:
 		system("cls");
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
@@ -61,8 +57,8 @@ void calculate() {
 		cout<<"\n\n";
 		cout<<" Voltage = "<< voltage <<".";
 		cout<<"\n\n\n\n";
-	}
-	if (option == 3) {
+		break;
+	case 3:
 		system("cls");
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
@@ -73,11 +69,7 @@ void calculate() {
 		cout<<"\n\n";
 		cout<<" Resistance = "<< resistance <<".";
 		cout<<"\n\n\n\n";
+		break;
 	}
-}
-
-void main() {
-	select();
-	calculate();
 	system ("PAUSE");
 }
