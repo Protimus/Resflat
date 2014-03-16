@@ -6,15 +6,32 @@
 *                                                                            *
 *   @author Rafael Pereira da Costa Gorges                                   *
 *   @contributors Vinicius de Morais                                         *
+*   @file main.cpp                                                           *
 *   @date 03/15/2014                                                         *
 *                                                                            *
 *****************************************************************************/
 
 #include <iostream>
+#include "console.hpp"
 using namespace std;
 
+/// Shows the console message.
+/*void console_display_title() {
+	Console::Message(""BG_WHITE"         (=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)"CONSOLE""NORMAL"\n");
+	Console::Message(""BG_CYAN"          ("WHITE"  ______    _______  _______  _______  ___      _______  _______ "BG_CYAN""CONSOLE")"NORMAL"\n");
+	Console::Message(""BG_CYAN"          ("WHITE" |    _ |  |       ||       ||       ||   |    |   _   ||       | "BG_CYAN")"CONSOLE""NORMAL"\n");
+	Console::Message(""BG_CYAN"          ("WHITE" |   | ||  |    ___||  _____||    ___||   |    |  |_|  ||_     _| "BG_CYAN")"CONSOLE""NORMAL"\n");
+	Console::Message(""BG_CYAN"          ("WHITE" |   |_||_ |   |___ | |_____ |   |___ |   |    |       |  |   |   "BG_CYAN")"CONSOLE""NORMAL"\n");
+	Console::Message(""BG_CYAN"          ("WHITE" |    __  ||    ___||_____  ||    ___||   |___ |       |  |   |   "BG_CYAN")"CONSOLE""NORMAL"\n");
+	Console::Message(""BG_CYAN"          ("WHITE" |   |  | ||   |___  _____| ||   |    |       ||   _   |  |   |   "BG_CYAN")"CONSOLE""NORMAL"\n");
+	Console::Message(""BG_CYAN"          ("WHITE" |___|  |_||_______||_______||___|    |_______||__| |__|  |___|   "BG_CYAN")"CONSOLE""NORMAL"\n");
+	Console::Message(""BG_WHITE"         (=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)"CONSOLE""NORMAL"\n\n");
+}*/
+
+/// The core function of program.
 void main() {
 
+	//console_display_title();
 	int input, resistance, voltage, current;
 	
 	system("cls");
@@ -106,7 +123,7 @@ void main() {
 	case 7: // Need be coded - Resistor Color
 		break;
 	case 8:
-		cout<"Quitting...\n";
+		cout<<"Quitting...\n";
 		break;
 	default:           
 		cout<<"Error: bad input, quitting\n";
