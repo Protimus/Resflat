@@ -1,16 +1,12 @@
 /*****************************************************************************
 *                                                                            *
 *   Resistor Calculator                                                      *
-*   Calculate the values on resistors and shows ur tolerance                 *
+*   Calculate the values according to the OHM Law and calculate resistance   *
+*   of resistors according your color.                                       *
 *                                                                            *
 *   @author Rafael Pereira da Costa Gorges                                   *
 *   @contributors Vinicius de Morais                                         *
 *   @date 03/15/2014                                                         *
-*                                                                            *
-*   CHANGELOG:                                                               *
-*   - Created the resistor class. [Rafael G]                                 *
-*   - Created the main function to calculate the values. [Rafael G]          *
-*   - Added some comments to the code. [Rafael G]                            *
 *                                                                            *
 *****************************************************************************/
 
@@ -29,7 +25,8 @@ void main() {
 		cout<<"\t4. Calculate Current in Parallel\n";
 		cout<<"\t5. Calculate Voltage in Parallel\n";
 		cout<<"\t6. Calculate Resistance in Parallel\n\n";
-		cout<<"\t7. Quit\n\n\n";
+		cout<<"\t7. Calculate Resistance by Resistor Color\n\n";
+		cout<<"\t8. Quit\n\n\n";
 		cout<<"\t Enter your choice =>  ";
 		cin>>input;
 		
@@ -69,6 +66,50 @@ void main() {
 		cout<<"\n\n";
 		cout<<" Resistance = "<< resistance <<".";
 		cout<<"\n\n\n\n";
+		break;
+	case 4:
+		system("cls");
+		cout<<"\n\n\n";
+		cout<<"\tEnter Current => ";
+		cin>>current;
+		cout<<"\tEnter Voltage => ";
+		cin>>voltage;
+		// OHM Formula to Parallel
+		cout<<"\n\n";
+		cout<<" Resistance = "<< resistance <<".";
+		cout<<"\n\n\n\n";
+		break;
+	case 5:
+		system("cls");
+		cout<<"\n\n\n";
+		cout<<"\tEnter Current => ";
+		cin>>current;
+		cout<<"\tEnter Voltage => ";
+		cin>>voltage;
+		// OHM Formula to Parallel
+		cout<<"\n\n";
+		cout<<" Resistance = "<< resistance <<".";
+		cout<<"\n\n\n\n";
+		break;
+	case 6:
+		system("cls");
+		cout<<"\n\n\n";
+		cout<<"\tEnter Current => ";
+		cin>>current;
+		cout<<"\tEnter Voltage => ";
+		cin>>voltage;
+		// OHM Formula to Parallel
+		cout<<"\n\n";
+		cout<<" Resistance = "<< resistance <<".";
+		cout<<"\n\n\n\n";
+		break;
+	case 7: // Need be coded - Resistor Color
+		break;
+	case 8:
+		cout<"Quitting...\n";
+		break;
+	default:           
+		cout<<"Error: bad input, quitting\n";
 		break;
 	}
 	system ("PAUSE");
