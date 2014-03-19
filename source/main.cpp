@@ -13,6 +13,12 @@
 
 #include <iostream>
 #include "console.hpp"
+#ifdef _WIN32
+	#define CLEAN "cls"
+#else
+	#define CLEAN "clear"
+#endif
+
 using namespace std;
 
 /// Shows the console message.
@@ -34,7 +40,7 @@ void main() {
 	//console_display_title();
 	int input, resistance, voltage, current;
 	
-	system("cls");
+	system(CLEAN);
 		cout<<"\n\n";
 		cout<<"\t1. Calculate Current in Serie\n";
 		cout<<"\t2. Calculate Voltage in Serie\n";
@@ -42,14 +48,14 @@ void main() {
 		cout<<"\t4. Calculate Current in Parallel\n";
 		cout<<"\t5. Calculate Voltage in Parallel\n";
 		cout<<"\t6. Calculate Resistance in Parallel\n\n";
-		cout<<"\t7. Calculate Resistance by Resistor Color\n\n";
+		cout<<"\t7. Calculate Resistance by Resistor Colour\n\n";
 		cout<<"\t8. Quit\n\n\n";
 		cout<<"\t Enter your choice =>  ";
 		cin>>input;
 		
 	switch (input) {
 	case 1:
-		system("cls");
+		system(CLEAN);
 		cout<<"\n\n\n";
 		cout<<"\tEnter Voltage => ";
 		cin>>voltage;
@@ -61,7 +67,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 2:
-		system("cls");
+		system(CLEAN);
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -73,7 +79,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 3:
-		system("cls");
+		system(CLEAN);
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -85,7 +91,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 4:
-		system("cls");
+		system(CLEAN);
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -97,7 +103,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 5:
-		system("cls");
+		system(CLEAN);
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -109,7 +115,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 6:
-		system("cls");
+		system(CLEAN);
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -127,7 +133,6 @@ void main() {
 		break;
 	default:           
 		cout<<"Error: bad input, quitting\n";
-		break;
 	}
 	system ("PAUSE");
 }
