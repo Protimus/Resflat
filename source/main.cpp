@@ -14,9 +14,9 @@
 #include <iostream>
 #include "console.hpp"
 #ifdef _WIN32
-	#define CLEAN "cls"
+	#define clear() system("cls")
 #else
-	#define CLEAN "clear"
+	#define clear() system("clear")
 #endif
 
 using namespace std;
@@ -40,7 +40,7 @@ void main() {
 	//console_display_title();
 	int input, resistance, voltage, current;
 	
-	system(CLEAN);
+	clear();
 		cout<<"\n\n";
 		cout<<"\t1. Calculate Current in Serie\n";
 		cout<<"\t2. Calculate Voltage in Serie\n";
@@ -55,7 +55,7 @@ void main() {
 		
 	switch (input) {
 	case 1:
-		system(CLEAN);
+		clear();
 		cout<<"\n\n\n";
 		cout<<"\tEnter Voltage => ";
 		cin>>voltage;
@@ -67,7 +67,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 2:
-		system(CLEAN);
+		clear();
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -79,7 +79,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 3:
-		system(CLEAN);
+		clear();
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -91,7 +91,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 4:
-		system(CLEAN);
+		clear();
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -103,7 +103,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 5:
-		system(CLEAN);
+		clear();
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
@@ -115,7 +115,7 @@ void main() {
 		cout<<"\n\n\n\n";
 		break;
 	case 6:
-		system(CLEAN);
+		clear();
 		cout<<"\n\n\n";
 		cout<<"\tEnter Current => ";
 		cin>>current;
